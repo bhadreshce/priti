@@ -1,0 +1,48 @@
+// .box{
+
+
+
+//     height: 100px;
+//     width: 100px;
+//     background-color: pink;
+//     border: 2px solid black;
+
+//      @media screen and (min-width:600px) {
+//          height: 200px;
+//          width: 100%;
+//          background-color: blueviolet;
+//          border: 3px solid red;
+//      }
+// }
+
+
+$width:200px;
+// @warn $width;
+// .box{
+//     height: 100px;
+//    @if($width > 100px){
+//          width: 500px;
+//    } @else {
+//    width: 100px;
+//    }
+//     background-color: pink;
+//     border: 2px solid black;
+// }
+
+// list 
+$rainbow: purple, aqua, lime, yellow, orange, red;
+
+@warn nth($rainbow , -2 );
+
+// @for $i from 1 to 6 {
+//     li:nth-child(#{$i}){
+//        color: nth($rainbow, $i );
+//     }
+// }
+
+@each $color in $rainbow {
+    .font-#{$color}{
+        color:  $color;
+    }
+}
+

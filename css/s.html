@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Counters Example</title>
+    <style>
+        body {
+            counter-reset: section;
+            /* Initialize the section counter */
+        }
+
+        h1 {
+            counter-reset: subsection;
+            /* Reset the subsection counter when a new section starts */
+        }
+
+        h1::before {
+            counter-increment: section;
+            /* Increment the section counter */
+            content: "Section " counter(section) ": ";
+            /* Display the section counter */
+        }
+
+        h2::before {
+            counter-increment: subsection;
+            /* Increment the subsection counter */
+            content: counter(section) "." counter(subsection) " ";
+            /* Display as "1.1", "1.2", etc. */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Introduction</h1>
+    <h2>Background</h2>
+    <h2>Purpose</h2>
+
+    <h1>Methodology</h1>
+    <h2>Data Collection</h2>
+    <h2>Analysis</h2>
+
+    <h1>Conclusion</h1>
+    <h2>Summary</h2>
+    <h2>Future Work</h2>
+</body>
+
+</html>

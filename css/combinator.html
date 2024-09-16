@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 
+
+descendant selector (space)
+child selector (>)
+adjacent sibling selector (+)
+general sibling selector (~)
+
+     -->
+
+    <style>
+        /* descendant selector (space) */
+
+        /* .a h1 {
+            background-color: blue;
+            color: white;
+        } */
+
+        /* child selector (>) */
+
+        /* .a>h1 {
+            background-color: blue;
+            color: white;
+        } */
+
+        /* .a+h1 {
+            background-color: blue;
+            color: white;
+        } */
+
+        /* .a~h1 {
+            background-color: blue;
+            color: white;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <h1> head 1</h1>
+        <h1>head 2</h1>
+        <h1> head 3</h1>
+        <div>
+            <h1>inner h1</h1>
+        </div>
+        <h1>head 4</h1>
+    </div>
+    <h1>Lorem ipsum dolor sit.</h1>
+    <h1>Lorem ipsum dolor sit.</h1>
+</body>
+
+</html>

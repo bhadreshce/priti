@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu {
+            width: 100%;
+            background-color: black;
+            padding: 20px;
+            display: flex;
+            gap: 30px
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+
+        }
+
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            .menu {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: brown;
+            }
+
+            .box {
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <a href="">HOME</a>
+        <a href="">CONTACT</a>
+        <a href="">ABOUT</a>
+        <a href="">SERVICE</a>
+
+    </div>
+
+    <div class="main">
+        <div class="box">
+
+        </div>
+        <div class="box">
+
+        </div>
+        <div class="box">
+
+        </div>
+        <div class="box">
+
+        </div>
+        <div class="box">
+
+        </div>
+        <div class="box">
+
+        </div>
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+
+</html>

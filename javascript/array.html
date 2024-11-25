@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <script src="loop.js"></script> -->
+    <script>
+        // var std = ['palak', 'mitesh', 'mayank', 'jenish']
+        // length: function for count length in array
+        // console.log(std.length);
+        // push : for add new element in array  at last
+        // std.push('arun', 'hitesh', 'maharshi', 'salman')
+        // console.log(std);
+
+        // pop : for remove last element in array
+
+        // std.pop()
+        // shift : for remove at fist element
+
+        // std.shift();
+
+        // unshift : for add at first element
+        // std.unshift('arun')
+        // console.log(std);
+
+        // slice : for slice an array
+        // var std = ['palak', 'mitesh', 'mayank', 'jenish']
+        // var ar = std.slice(0, 3)
+        // console.log(ar);
+
+        // splice : for remote and replace in array
+        // var std = ['palak', 'mitesh', 'mayank', 'jenish']
+        // std.splice(1, 2, 'bbb', 'nnnn', 'mmm')
+        // console.log(std);
+
+        // sort : for sort array in ascending order
+        // var std = [5, 1, 33, 7]
+        // std.sort((a, b) => {
+        //     return b - a;
+
+        // })
+        // console.log(std);
+
+        // concat : for merge two array
+        // var std1 = ['palak', 'mitesh']
+        // var std2 = ['mayank', 'jenish']
+        // var std3 = ['mayank', 'jenish']
+
+        // var std = std1.concat(std2, std3)
+        // console.log(std);
+
+        // join : for convert array to string
+        // var std = [12, 'mitesh', 'mayank', 'jenish']
+        // var std = std.join(',')
+        // console.log(std);
+
+        // indexof : check index of particular value in array
+        // var std = ['palak', 'mitesh', '', 'jenish', '']
+        // var std = std.indexOf('mayank')
+        // console.log(std);
+
+        // lastIndexOf : check index of particular value in array from last
+        // var std = ['palak', 'mitesh', 'mayank', 'jenish', 'mayank']
+        // var std = std.lastIndexOf('mayank')
+        // console.log(std);
+
+        // includes: check includes of particular value in array
+        // var std = ['palak', 'mitesh', 'mayank', 'jenish']
+        // var std = std.includes('mayank')
+        // console.log(std);
+
+        // at : get value from index
+        // var std = ['palak', 'mitesh', '', 'jenish']
+        // var std = std.at(2)
+        // console.log(std);
+
+        // toString: convert to string
+        // var std = ['palak', 'mitesh', 'mayank', 'jenish']
+        // console.log(typeof std);
+        // var std = std.toString()
+        // console.log(typeof std);
+        // console.log(std);
+
+        // flat : convert multidemention array to single
+        // var std = [[1, 2], [3, 4], [5, 6]]
+        // var std = std.flat()
+        // console.log(std);
+        //dele: delete from array
+        // var std = [1, 2, 3, 4]
+        // delete std[1]
+        // console.log(std[1]);
+        //copywithin : for copy index
+        // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // var cop = fruits.copyWithin(2, 0);
+        // console.log(cop);
+
+        // find : test and find
+
+        // var makrs = [50, 60, 70, 80]
+
+        // var max = makrs.findIndex((value) => {
+        //     return value > 60;
+        // })
+        // console.log(max);
+
+        // for filter array 
+        // var makrs = [30, 60, 70, 80]
+        // var std = [{ name: "bhavesh", age: 20, makrs: 60 },
+        // { name: "bbb", age: 20, makrs: 80 }, { name: "bbb", age: 20, makrs: 60 }]
+        // var fil = std.filter((value) => {
+        //     return value.name === "bhavesh";
+        // })
+
+        // console.log(fil);
+
+        // map :for create new array using exiting array 
+        // var std = [{ name: "bhavesh", age: 20, makrs: 60 },
+        // { name: "bbb", age: 20, makrs: 80 },
+        // { name: "bbb", age: 20, makrs: 60 }
+        // ]
+
+        // var std1 = std.map((result) => {
+        //     if (result.name === 'bhavesh') {
+        //         return { name: result.name + ' Bavaliya', age: result.age, makrs: result.makrs }
+        //     } else {
+        //         return result;
+        //     }
+        //     // return { name: result.name, age: result.age, makrs: result.makrs + 10 }
+        // })
+        // console.log(std1);
+
+
+        const data = [
+            [5, 15, 25],
+            [1, 7, 9],
+            [30, 50],
+            [2, 4, 8]
+        ];
+
+        // const newD = data.map((result) => {
+        //     const newData = result.map((res) => {
+        //         if (res >= 10) {
+        //             return res
+        //         }
+        //     })
+        //     const filterData = newData.filter((d) => {
+        //         return d != undefined
+        //     })
+
+        //     if (filterData.length == 0) {
+        //         filterData.push('No data found')
+        //     }
+        //     // console.log(filterData);
+
+        //     return filterData
+        // })
+
+        // console.log(newD);
+
+
+
+        // const students = [
+        //     { name: "Alice", grades: [85, 90, 92] },
+        //     { name: "Bob", grades: [75, 78, 80] },
+        //     { name: "Charlie", grades: [90, 95, 98] }
+        // ];
+
+        // const avrg = students.map((std) => {
+        //     var avg = 0
+        //     std.grades.map((marks) => {
+        //         avg += marks
+        //     })
+
+        //     avg = avg / std.grades.length
+
+        //     return {
+        //         name: std.name,
+        //         average: avg
+        //     }
+
+        // })
+        // console.log(avrg);
+
+
+        // clouser concept in js
+        // const parent = (a, b) => {
+        //     return (c) => {
+        //         return a + b + c
+        //     }
+        // }
+
+        // const callParent = parent(2, 3)
+        // console.log(callParent(5));
+        // console.log(callParent(6));
+        // console.log(callParent(7));
+
+        //string method
+        // const str = "      Hello World World    "
+        // console.log(str.charAt(0));
+        // console.log(str.charCodeAt(0));
+        // console.log(str.concat(" How are you?"));
+        // console.log(str.endsWith("World"));
+        // console.log(str.includes("llo"));
+        // console.log(str.indexOf("World"));
+        // console.log(str.lastIndexOf("World"));
+        // console.log(str.match(/world/i));
+        // console.log(str.repeat(3));
+        // console.log(str.replace("World", "Universe"));
+        // console.log(str.replaceAll("World", "Universe"));
+        // console.log(str.slice(0, 5));
+        // console.log(str.split(" "));
+        // console.log(str.substring(0, 5));
+        // console.log(str.toLowerCase());
+        // console.log(str.toUpperCase());
+        // console.log(str.trim());
+        // console.log(str.trimRight());
+        // console.log(str.trimLeft());
+
+
+
+    </script>
+</body>
+
+</html>

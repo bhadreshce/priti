@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* h1 {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        h1::before {
+            content: '';
+            height: 5px;
+            padding: 0px;
+            width: 60px;
+            background: linear-gradient(to right, red, yellow);
+            display: inline-block;
+            margin-bottom: 5px;
+
+        }
+
+
+        h1::after {
+            content: '';
+            height: 5px;
+            padding: 0px;
+            width: 60px;
+            background: linear-gradient(to right, red, yellow);
+            display: inline-block;
+            margin-bottom: 5px;
+
+        } */
+
+        button {
+            height: 50PX;
+            width: 100PX;
+            background-color: cadetblue;
+            position: relative;
+            overflow: hidden;
+        }
+
+        button::before {
+            content: 'I M';
+            top: 0;
+            left: 0;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            display: grid;
+            place-content: center;
+            background: linear-gradient(to right, red, yellow);
+            transform: translateY(-100%);
+            transition: all 1s ease-in-out;
+            border: 1ps solid black;
+            /* overflow: hidden; */
+
+        }
+
+        button:hover::before {
+            transform: translateY(0);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            color: white;
+
+            -webkit-text-stroke: 1px black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>Hello</h1> -->
+
+    <button>HOVER</button>
+
+    <h1>Hello</h1>
+</body>
+
+</html>

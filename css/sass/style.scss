@@ -16,7 +16,7 @@
 // }
 
 
-$width:200px;
+// $width:200px;
 // @warn $width;
 // .box{
 //     height: 100px;
@@ -32,7 +32,7 @@ $width:200px;
 // list 
 $rainbow: purple, aqua, lime, yellow, orange, red;
 
-@warn nth($rainbow , -2 );
+// @warn nth($rainbow , 2 );
 
 // @for $i from 1 to 6 {
 //     li:nth-child(#{$i}){
@@ -44,5 +44,14 @@ $rainbow: purple, aqua, lime, yellow, orange, red;
     .font-#{$color}{
         color:  $color;
     }
+}
+
+$i:5;
+@while $i > 0 {
+    .icon-#{$i}{
+         padding: 10px;
+    }
+
+    $i : $i - 1;
 }
 

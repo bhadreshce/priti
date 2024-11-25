@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .grid-margin {
+            margin: 0px 50px;
+        }
+
+        .grid-padding {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .grid-main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .grid-main .grid-box .fa-book {
+            color: brown;
+            font-size: 30px;
+            margin-top: 10px;
+        }
+
+        .grid-main .grid-box h3 {
+            text-transform: capitalize;
+        }
+
+        .grid-main .grid-box p {
+            text-align: justify;
+            color: gray;
+        }
+
+        .grid-main .grid-box {
+            /* border: 4px solid rgb(104, 84, 84); */
+            padding: 20px;
+            /* border-radius: 20px; */
+            transition: all 0.5s linear;
+        }
+
+        .grid-main .grid-box:hover {
+            transform: translateY(-6px);
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.8);
+            /* Add shadow */
+
+        }
+
+        .grid-main .grid-box:hover h3 {
+            color: brown;
+
+        }
+
+        .grid-main .grid-box:hover .fa-book {
+            color: red;
+        }
+
+        @media screen and (max-width: 850px) {
+            .grid-main {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .grid-main .grid-box:nth-child(3) {
+                grid-column: span 2;
+                /* Make the third item span across two columns */
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .grid-main {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .grid-main .grid-box:nth-child(3) {
+                grid-column: span 1;
+                /* Ensure it takes the full width */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="grid-margin">
+            <div class="grid-padding">
+                <div class="grid-main">
+                    <div class="grid-box">
+                        <i class="fa-solid fa-book"></i>
+                        <h3>The large selection of courses and instruction
+                        </h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, ipsum a possimus nemo eum
+                            omnis doloremque illo pariatur
+                            expedita recusandae. Quis aperiam, repellat facilis quas at omnis aliquid! Alias, optio!
+                        </p>
+                    </div>
+                    <div class="grid-box">
+                        <i class="fa-solid fa-book"></i>
+                        <h3>The large selection of courses and instruction
+                        </h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, ipsum a possimus nemo eum
+                            omnis doloremque illo pariatur
+                            expedita recusandae. Quis aperiam, repellat facilis quas at omnis aliquid! Alias, optio!
+                        </p>
+                    </div>
+                    <div class="grid-box">
+                        <i class="fa-solid fa-book"></i>
+                        <h3>The large selection of courses and instruction
+                        </h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, ipsum a possimus nemo eum
+                            omnis doloremque illo pariatur
+                            expedita recusandae. Quis aperiam, repellat facilis quas at omnis aliquid! Alias, optio!
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

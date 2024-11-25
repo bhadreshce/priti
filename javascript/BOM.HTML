@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="openLink()">open</button>
+    <button onclick="closelINK()">close</button>
+    <button onclick="moveWin()">Move "myWindow"</button>
+    <button onclick="goBack()">back</button>
+    <button onclick="goForward()">forword</button>
+    <script>
+        //bom : browser object model
+        // let w = window.innerWidth;
+        // let h = window.innerHeight;
+        // console.log(w);
+        // console.log(h);
+        var data;
+        function openLink() {
+            data = window.open("https://www.w3schools.com");
+
+        }
+        function closelINK() {
+            data.close()
+        }
+        function moveWin() {
+            myWindow.moveTo(700, 100);
+        }
+
+        // screen.width
+        // screen.height
+        // screen.availWidth
+        // screen.availHeight
+
+        // window.location.href returns the href (URL) of the current page
+        console.log(window.location.href);
+        // window.location.hostname returns the domain name of the web host
+        console.log(window.location.hostname);
+        // window.location.pathname returns the path and filename of the current page
+        console.log(window.location.pathname);
+        // window.location.protocol returns the web protocol used(http: or https: )
+        console.log(window.location.protocol);
+        // window.location.assign() loads a new document
+        // console.log(window.location.assign());
+
+        function goBack() {
+            window.history.back()
+        }
+
+        function goForward() {
+            window.history.forward()
+        }
+
+        // if (confirm("Press a button!")) {
+        //     alert('hhhhhh')
+        // } else {
+        //     alert('Press a')
+        // }
+
+        // document.cookie = "username=John Doe";
+        // console.log(document.cookie.split('='));
+        // document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+    </script>
+</body>
+
+</html>
